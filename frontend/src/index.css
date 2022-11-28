@@ -1,0 +1,153 @@
+:root {
+  --clr-pink: #D87D4A;
+  --clr-light-pink: #FBAF85;
+  --bg-dark: #101010;
+  --bg-light: #FAFAFA;
+  --bg-element: #F1F1F1;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 300;
+}
+
+/* set up the body */
+
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  overflow-x: hidden;
+  background-color: var(--bg-light);
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 2px;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 1.43px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 1.14px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 2px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+}
+
+.overline {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+
+/* make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 38*px;
+  }
+}

@@ -1,0 +1,83 @@
+.Nav {
+   display: flex;
+   gap: 30px;
+}
+
+.Nav>div {
+   background-color: var(--bg-element);
+   border-radius: 8px;
+   flex: 1 1 0px;
+   padding-bottom: 30px;
+   display: flex;
+   flex-direction: column;
+}
+
+.Nav .image {
+   max-width: 200px;
+   margin-inline: auto;
+   margin-top: -60px;
+   margin-bottom: -15px;
+}
+
+
+.Nav .bottom {
+   margin-top: auto;
+}
+
+.Nav h6 {
+   text-align: center;
+   color: black;
+   padding-bottom: 15px;
+}
+
+.Nav .nav-link {
+   width: fit-content;
+   margin-inline: auto;
+}
+
+.Nav .nav-link a {
+   color: hsla(0, 0%, 0%, 0.5);
+   font-size: 13px;
+   text-transform: uppercase;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 13px;
+}
+
+.Nav .nav-link a p {
+   font-weight: 700;
+}
+
+@media (hover: hover) and (pointer: fine) {
+   .Nav .nav-link a:hover {
+      color: var(--clr-pink);
+   }
+}
+
+@media (max-width: 800px) {
+   .Nav {
+      gap: 10px;
+   }
+
+   .Nav>div {
+      padding-bottom: 22px;
+   }
+
+   .Nav .image {
+      max-width: 147px;
+      margin-top: -50px;
+   }
+
+   .Nav h6 {
+      font-size: 15px;
+   }
+}
+
+@media (max-width: 480px) {
+   .Nav {
+      flex-direction: column;
+      gap: 70px;
+   }
+}

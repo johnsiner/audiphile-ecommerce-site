@@ -1,0 +1,276 @@
+.home {
+   background-color: #191919;
+}
+
+.home .heading {
+   background: url(../assets/home/desktop/image-hero.jpg);
+   background-size: cover;
+   background-position: center;
+   padding: 225px 0 128px;
+}
+
+.home .heading .info {
+   max-width: 50ch;
+}
+
+.home .heading .info .overline {
+   opacity: 0.5;
+   margin-bottom: 24px;
+}
+
+.home .heading .info p {
+   opacity: 0.75;
+   margin: 24px 0 40px;
+   max-width: 40ch;
+}
+
+.home .products {
+   background-color: var(--bg-light);
+}
+
+.home .categories {
+   padding: 200px 0 168px;
+}
+
+.home .zx9 {
+   padding-bottom: 48px;
+}
+
+.home .zx9 .container {
+   background-color: var(--clr-pink);
+   background-image: url(../assets/home/desktop/pattern-circles.svg);
+   background-repeat: no-repeat;
+   background-position: -160px -30px;
+   border-radius: 8px;
+   padding-top: 133px;
+   padding-inline: 20px;
+   display: flex;
+   justify-content: center;
+   gap: 130px;
+   overflow: hidden;
+}
+
+.home .zx9 .image {
+   max-width: 400px;
+   margin-bottom: -15px;
+}
+
+.home .zx9 .info h1 {
+   max-width: 10ch;
+}
+
+.home .zx9 .info p {
+   max-width: 35ch;
+   margin: 24px 0 40px;
+   opacity: 0.75;
+}
+
+.home .zx7 {
+   padding-bottom: 48px;
+}
+
+.home .zx7 .container {
+   background-image: url(../assets/home/desktop/image-speaker-zx7.jpg);
+   border-radius: 8px;
+}
+
+.home .zx7 .container>div {
+   padding: 100px 0 100px 90px;
+}
+
+.home .zx7 h4 {
+   color: black;
+   margin-bottom: 32px;
+}
+
+.home .yx1 {
+   padding-bottom: 200px;
+}
+
+.home .yx1 .container {
+   display: flex;
+   gap: 30px;
+}
+
+.home .yx1 .container>div {
+   flex: 1 1 0px;
+   border-radius: 8px;
+}
+
+.home .yx1 .image {
+   background-image: url(../assets/home/desktop/image-earphones-yx1.jpg);
+}
+
+.home .yx1 .info {
+   background-color: var(--bg-element);
+}
+
+.home .yx1 .info>div {
+   padding: 100px 0 100px 90px;
+}
+
+.home .yx1 h4 {
+   color: black;
+   margin-bottom: 32px;
+}
+
+
+
+
+@media(max-width: 800px) {
+   .home .heading {
+      background: url(../assets/home/tablet/image-header.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 216px 0 167px;
+   }
+
+   .home .heading .info {
+      max-width: 100%;
+      margin-inline: auto;
+      text-align: center;
+   }
+
+   .home .heading .info p {
+      max-width: 100%;
+      text-align: center;
+      max-width: 38ch;
+      margin-inline: auto;
+   }
+
+   .home .categories {
+      padding: 148px 0 96px;
+   }
+
+   .home .zx9 {
+      padding-bottom: 32px;
+   }
+
+   .home .zx9 .container {
+      flex-direction: column;
+      padding: 52px 0 64px;
+      gap: 65px;
+      background-position: center -290px;
+      padding-inline: 0;
+   }
+
+   .home .zx9 .image {
+      max-width: 195px;
+      margin-inline: auto;
+      margin-bottom: 0;
+   }
+
+   .home .zx9 .info {
+      text-align: center;
+      /* width: 100%; */
+   }
+
+   .home .zx9 .info h1,
+   .home .zx9 .info p {
+      margin-inline: auto;
+   }
+
+   .home .zx7 {
+      padding-bottom: 32px;
+   }
+
+   .home .zx7 .container {
+      background-image: url(../assets/home/tablet/image-speaker-zx7.jpg);
+      background-size: cover;
+   }
+
+   .home .zx7 .container>div {
+      padding-left: 60px;
+   }
+
+   .home .yx1 {
+      padding-bottom: 96px;
+   }
+
+   .home .yx1 .container {
+      gap: 11px;
+   }
+
+   .home .yx1 .image {
+      background-image: url(../assets/home/tablet/image-earphones-yx1.jpg);
+      background-size: cover;
+   }
+
+   .home .yx1 .info>div {
+      padding: 100px 0 100px 90px;
+      padding-left: 0;
+      width: fit-content;
+      margin-inline: auto;
+   }
+
+}
+
+@media(max-width: 480px) {
+   .home .heading {
+      background: url(../assets/home/mobile/image-header.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 198px 0 112px;
+   }
+
+   .home .heading .info p {
+      max-width: 35ch;
+   }
+
+   .home .categories {
+      padding: 92px 0 120px;
+   }
+
+   .home .zx9 .container {
+      flex-direction: column;
+      padding: 52px 0 64px;
+      gap: 32px;
+      background-size: 550px 550px;
+      background-position: center -120px;
+   }
+
+   .home .zx9 .image {
+      max-width: 170px;
+   }
+
+   .home .zx9 .info p {
+      margin: 24px 0 24px;
+      margin-inline: auto;
+   }
+
+   .home .zx7 .container {
+      background-image: url(../assets/home/mobile/image-speaker-zx7.jpg);
+      background-size: cover;
+   }
+
+   .home .zx7 .container>div {
+      padding-left: 24px;
+   }
+
+   .home .yx1 {
+      padding-bottom: 120px;
+   }
+
+   .home .yx1 .container {
+      flex-direction: column;
+      gap: 24px;
+   }
+
+   .home .yx1 .container>div {
+      flex: auto;
+      border-radius: 8px;
+   }
+
+   .home .yx1 .image {
+      background-image: url(../assets/home/mobile/image-earphones-yx1.jpg);
+      width: 100%;
+      height: 200px;
+   }
+
+   .home .yx1 .info>div {
+      margin: 0;
+      padding: 41px 0 41px 24px;
+   }
+}
