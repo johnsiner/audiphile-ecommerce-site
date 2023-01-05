@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useReducer } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import BestGear from '../components/BestGear';
 import LoadingSpinner from '../components/LoadingSpinner';
 import Nav from '../components/Nav';
@@ -37,9 +38,7 @@ export default function ProductPage() {
       const fetchData = async () => {
          dispatch({ type: 'FETCH_REQUEST' });
          try {
-            const result = await fetch(
-               `http://192.168.43.166:5000/shop/product/${slug}`
-            );
+            const result = await fetch(`/shop/product/${slug}`);
             const data = await result.json();
             dispatch({ type: 'FETCH_SUCCESS', payload: data[0] });
          } catch (err) {
@@ -60,6 +59,9 @@ export default function ProductPage() {
             <p className="center">Something went wrong</p>
          ) : (
             <Fragment>
+               <Helmet>
+                  <title>Audiophile || {product.shortName}</title>
+               </Helmet>
                <div className="container">
                   <p className="go-back" onClick={() => navigate(-1)}>
                      Go Back

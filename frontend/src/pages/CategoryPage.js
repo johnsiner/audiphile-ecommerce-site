@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import BestGear from '../components/BestGear';
 import Footer from '../components/Footer';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -33,6 +34,9 @@ export default function CategoryPage() {
 
    return (
       <div className="category-page">
+         <Helmet>
+            <title>Audiophile || {category}</title>
+         </Helmet>
          {/* <Header /> */}
          <div className="heading">
             <h2>{category}</h2>

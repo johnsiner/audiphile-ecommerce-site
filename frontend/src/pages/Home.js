@@ -5,6 +5,7 @@ import Nav from '../components/Nav';
 import zx9 from '../assets/home/desktop/image-speaker-zx9.png';
 import BestGear from '../components/BestGear';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
    useEffect(() => {
@@ -13,6 +14,9 @@ export default function Home() {
 
    return (
       <div className="home">
+         <Helmet>
+            <title>Audiophile</title>
+         </Helmet>
          <div className="heading">
             <div className="container">
                <div className="info">

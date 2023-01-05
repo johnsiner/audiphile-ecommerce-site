@@ -1,5 +1,5 @@
 export const getHeadphones = async () => {
-   const response = await fetch('http://192.168.43.166:5000/shop/headphones');
+   const response = await fetch('/shop/headphones');
    const data = await response.json();
    if (!response.ok) {
       throw new Error(data.message || 'Could not fetch headphones');
@@ -8,7 +8,7 @@ export const getHeadphones = async () => {
 };
 
 export const getEarphones = async () => {
-   const response = await fetch('http://192.168.43.166:5000/shop/earphones');
+   const response = await fetch('/shop/earphones');
    const data = await response.json();
    if (!response.ok) {
       throw new Error(data.message || 'Could not fetch earphones');
@@ -17,7 +17,7 @@ export const getEarphones = async () => {
 };
 
 export const getSpeakers = async () => {
-   const response = await fetch('http://192.168.43.166:5000/shop/speakers');
+   const response = await fetch('/shop/speakers');
    const data = await response.json();
    if (!response.ok) {
       throw new Error(data.message || 'Could not fetch speakers');
@@ -26,7 +26,7 @@ export const getSpeakers = async () => {
 };
 
 export const getCategory = async (category) => {
-   const response = await fetch('http://192.168.43.166:5000/shop/' + category);
+   const response = await fetch('/shop/' + category);
    const data = await response.json();
    if (!response.ok) {
       throw new Error(data.message || 'Could not fetch speakers');

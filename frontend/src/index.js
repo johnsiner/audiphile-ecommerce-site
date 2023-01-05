@@ -5,14 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import CartContextProvider from './store';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
       <CartContextProvider>
-         <BrowserRouter>
-            <App />
-         </BrowserRouter>
+         <HelmetProvider>
+            <BrowserRouter>
+               <App />
+            </BrowserRouter>
+         </HelmetProvider>
       </CartContextProvider>
    </React.StrictMode>
 );
