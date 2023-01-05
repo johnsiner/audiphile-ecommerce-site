@@ -1,0 +1,42 @@
+.quantity-select {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #F1F1F1;
+   height: 48px;
+   width: 120px;
+   padding-inline: 15px;
+}
+
+.quantity-select.in-cart {
+   height: 32px;
+   width: 96px;
+   padding-inline: 11px;
+}
+
+.minus,
+.plus {
+   font-size: 15px;
+   line-height: 18px;
+   font-weight: 700;
+   opacity: 0.25;
+   cursor: pointer;
+}
+
+.minus.disable {
+   cursor: not-allowed;
+}
+
+.quantity {
+   font-size: 13px;
+   font-weight: 700;
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+   .minus:hover,
+   .plus:hover {
+      color: var(--clr-pink);
+      opacity: 1;
+   }
+}

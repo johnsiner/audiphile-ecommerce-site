@@ -6,7 +6,7 @@
    background: url(../assets/home/desktop/image-hero.jpg);
    background-size: cover;
    background-position: center;
-   padding: 225px 0 128px;
+   padding: 225px 0 158px;
 }
 
 .home .heading .info {
@@ -114,6 +114,9 @@
    margin-bottom: 32px;
 }
 
+.home .extra {
+   background-color: white;
+}
 
 
 

@@ -1,0 +1,23 @@
+.category-page .heading {
+   padding: 195px 0 97px;
+   background-color: var(--bg-dark);
+   text-align: center;
+}
+
+.category-page .best-gear {
+   margin-top: 160px;
+}
+
+
+@media (max-width: 800px) {
+   .category-page .best-gear {
+      margin-top: 120px;
+   }
+}
+
+
+@media (max-width: 480px) {
+   .category-page .heading {
+      padding: 122px 0 32px;
+   }
+}

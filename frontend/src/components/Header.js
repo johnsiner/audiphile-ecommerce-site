@@ -1,9 +1,10 @@
 import React, { Fragment, useState } from 'react';
+import './Header.css';
 import { Divide as Hamburger } from 'hamburger-react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import logo from '../assets/shared/desktop/logo.svg';
-import cartIcon from '../assets/shared/desktop/icon-cart.svg';
 import Nav from './Nav';
+import HeaderCartButton from './HeaderCartButton';
 
 export default function Header() {
    const [navIsOpened, setNavIsOpened] = useState(false);
@@ -12,8 +13,10 @@ export default function Header() {
       setNavIsOpened(false);
    };
 
+   const { pathname } = useLocation();
+
    return (
-      <header>
+      <header className={pathname === '/' ? 'home' : ''}>
          <div className="container">
             <div>
                <div className="menu-toggle">
@@ -31,12 +34,12 @@ export default function Header() {
             </div>
             <nav>
                <NavLink to="/">HOME</NavLink>
-               <NavLink to="/headphones">HEADPHONES</NavLink>
-               <NavLink to="/speakers">SPEAKERS</NavLink>
-               <NavLink to="/earphones">EARPHONES</NavLink>
+               <NavLink to="/category/headphones">HEADPHONES</NavLink>
+               <NavLink to="/category/speakers">SPEAKERS</NavLink>
+               <NavLink to="/category/earphones">EARPHONES</NavLink>
             </nav>
-            <div className="cart">
-               <img src={cartIcon} alt="cart" />
+            <div>
+               <HeaderCartButton />
             </div>
          </div>
          {navIsOpened && (

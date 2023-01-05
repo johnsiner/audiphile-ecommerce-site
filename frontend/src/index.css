@@ -148,6 +148,11 @@ select {
 
   h2 {
     font-size: 28px;
-    line-height: 38*px;
+    line-height: 38px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
   }
 }

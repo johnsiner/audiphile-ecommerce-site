@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
 import zx9 from '../assets/home/desktop/image-speaker-zx9.png';
+import BestGear from '../components/BestGear';
+import Footer from '../components/Footer';
 
 export default function Home() {
+   useEffect(() => {
+      window.scrollTo({ top: 0, left: 0 });
+   }, []);
+
    return (
       <div className="home">
          <div className="heading">
@@ -17,7 +23,9 @@ export default function Home() {
                      quality made for the passionate music enthusiast.
                   </p>
                   <div className="link">
-                     <Link to="/">see product</Link>
+                     <Link to="/product/xx99-mark-two-headphones">
+                        see product
+                     </Link>
                   </div>
                </div>
             </div>
@@ -38,7 +46,7 @@ export default function Home() {
                         to deliver truly remarkable sound.
                      </p>
                      <div className="link dark">
-                        <Link to="/">see product</Link>
+                        <Link to="/product/zx9-speaker">see product</Link>
                      </div>
                   </div>
                </div>
@@ -48,7 +56,7 @@ export default function Home() {
                   <div>
                      <h4>zx7 speaker</h4>
                      <div className="link light">
-                        <Link to="/">see product</Link>
+                        <Link to="/product/zx7-speaker">see product</Link>
                      </div>
                   </div>
                </div>
@@ -60,13 +68,17 @@ export default function Home() {
                      <div>
                         <h4>yx1 earphones</h4>
                         <div className="link light">
-                           <Link to="/">see product</Link>
+                           <Link to="/product/yx1-earphones">see product</Link>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
          </section>
+         <div className="extra">
+            <BestGear />
+            <Footer />
+         </div>
       </div>
    );
 }

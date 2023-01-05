@@ -1,0 +1,99 @@
+header {
+   position: fixed;
+   width: 100%;
+   z-index: 100;
+   background-color: var(--bg-dark);
+}
+
+header.home {
+   background-color: #191919;
+}
+
+header .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 32px 0 36px;
+   border-bottom: 1px solid hsla(100, 100%, 100%, 0.2);
+   position: relative;
+   z-index: 100;
+}
+
+header .container>div:first-child {
+   display: flex;
+   align-items: center;
+   gap: 42px;
+}
+
+header .menu-toggle {
+   display: none;
+}
+
+header nav {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 34px;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+   font-size: 13px;
+   letter-spacing: 2px;
+}
+
+.menu {
+   background-color: #FFFFFF;
+   position: absolute;
+   width: 100%;
+   z-index: 1000;
+   border-bottom-right-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+
+.menu>div {
+   width: min(100% - 9vw, 1110px);
+   margin-inline: auto;
+   padding: 80px 0 67px;
+}
+
+
+@media (max-width: 800px) {
+   header .container {
+      padding-block: 20px;
+   }
+
+   header .menu-toggle {
+      display: flex;
+      color: white;
+   }
+
+   header nav {
+      display: none;
+   }
+}
+
+@media (max-width: 480px) {
+   header .container {
+      width: 100%;
+   }
+
+   header .container>div {
+      padding-inline: 2.5vw;
+   }
+
+   header .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   .menu {
+      height: 100%;
+      overflow-y: scroll;
+      height: 89vh;
+   }
+}

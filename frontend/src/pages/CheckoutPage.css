@@ -1,0 +1,30 @@
+.checkout-page {
+   height: 700px;
+   background-color: var(--bg-element);
+}
+
+.checkout-page .heading {
+   padding-top: 94px;
+}
+
+.checkout-page>.container {
+   color: black;
+   margin-top: 79px;
+}
+
+.checkout-page footer {
+   margin-top: 140px;
+}
+
+
+@media (max-width: 800px) {
+   .checkout-page footer {
+      margin-top: 116px;
+   }
+}
+
+@media (max-width: 480px) {
+   .checkout-page footer {
+      margin-top: 97px;
+   }
+}
